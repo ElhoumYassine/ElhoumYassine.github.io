@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yassine EL HOUM — Robotics &amp; Control Researcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+<canvas id="particles"></canvas>
+
+<!-- Thin top bar -->
+<nav class="topbar">
+    <a href="index.html" class="tb-brand">Y. EL HOUM</a>
+    <div class="tb-right">
+        <a href="publications.html" class="tb-link">All Publications</a>
+        <button class="theme-btn" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+    </div>
+</nav>
+
+<!-- ===== DASHBOARD LAYOUT ===== -->
+<main class="dashboard">
+
+    <!-- ─── LEFT COLUMN ─── -->
+    <div class="col-left">
+
+        <!-- Identity card -->
+        <div class="card id-card">
+            <div class="id-top">
+                <div class="id-photo-ring">
+                    <img src="profile_pic.jpeg" alt="Yassine EL HOUM">
+                </div>
+                <div class="id-info">
+                    <h1>Yassine EL HOUM</h1>
+                    <p class="id-role">Postdoctoral Researcher</p>
+                    <p class="id-affil"><i class="fas fa-university"></i> University of Catania, Italy</p>
+                </div>
+            </div>
+            <p class="id-bio">Human–robot shared autonomy, brain–computer interfaces, sliding mode control &amp; deep learning for intelligent robotic systems.</p>
+            <div class="id-links">
+                <a href="mailto:yassine.elhoum@unict.it" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://scholar.google.com/citations?user=HXjQfMgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" title="Scholar"><i class="ai ai-google-scholar"></i></a>
+                <a href="https://github.com/" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="Yassine_cv_updated-1.pdf" title="CV"><i class="fas fa-file-pdf"></i></a>
+            </div>
+        </div>
+
+        <!-- Stats row -->
+        <div class="stats-row">
+            <div class="stat"><span class="stat-n">23+</span><span class="stat-l">Papers</span></div>
+            <div class="stat"><span class="stat-n">810+</span><span class="stat-l">Citations</span></div>
+            <div class="stat"><span class="stat-n">8+</span><span class="stat-l">Years</span></div>
+        </div>
+
+        <!-- Research interests -->
+        <div class="card">
+            <h2><i class="fas fa-microscope"></i> Research</h2>
+            <div class="research-mini">
+                <div class="rm"><i class="fas fa-hands-helping"></i> <strong>Shared Autonomy</strong> — BCI-decoded intentions + safety-constrained robot control</div>
+                <div class="rm"><i class="fas fa-brain"></i> <strong>Brain–Computer Interfaces</strong> — Motor-imagery EEG decoding, deep learning classification</div>
+                <div class="rm"><i class="fas fa-helicopter"></i> <strong>UAV Robust Control</strong> — Sliding mode controllers, state estimation &amp; autonomous navigation</div>
+                <div class="rm"><i class="fas fa-network-wired"></i> <strong>Deep Learning</strong> — CNN-LSTM / ConvLSTM for forecasting &amp; signal decoding</div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="card">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="edu-mini">
+                <div class="em"><span class="em-deg">Ph.D. Control Systems</span><span class="em-where">EMI, Rabat · 2023</span></div>
+                <div class="em"><span class="em-deg">M.Sc. Electronics &amp; Automation</span><span class="em-where">FSTS, Settat · 2016</span></div>
+                <div class="em"><span class="em-deg">B.Sc. Electronics &amp; Automation</span><span class="em-where">FSTS, Settat · 2014</span></div>
+            </div>
+        </div>
+
+        <!-- Skills compact -->
+        <div class="card">
+            <h2><i class="fas fa-tools"></i> Skills</h2>
+            <div class="chips">
+                <span>ROS / ROS 2</span><span>MoveIt</span><span>Gazebo</span><span>Python</span>
+                <span>C/C++</span><span>MATLAB</span><span>Simulink</span><span>Sliding Mode</span>
+                <span>CNN-LSTM</span><span>EEG</span><span>dSPACE</span><span>OPAL-RT</span>
+                <span>LabVIEW</span><span>Docker</span><span>Git</span><span>Linux</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ─── RIGHT COLUMN ─── -->
+    <div class="col-right">
+
+        <!-- Experience -->
+        <div class="card">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <div class="exp-list">
+                <div class="exp">
+                    <div class="exp-head">
+                        <strong>Postdoctoral Researcher</strong>
+                        <span class="exp-date">Sep 2024 – Present</span>
+                    </div>
+                    <span class="exp-org">University of Catania — HOME4.0 / PRIN PNRR 2022</span>
+                    <ul>
+                        <li>BCI platform for robotic home-automation on Alter-Ego humanoid</li>
+                        <li>Developed real-time EEG decoding pipelines for motor-imagery classification and human–robot shared autonomy</li>
+                        <li>Designed and validated robotic manipulation tasks in Gazebo simulation and on the physical Alter-Ego humanoid robot</li>
+                    </ul>
+                </div>
+                <div class="exp">
+                    <div class="exp-head">
+                        <strong>Doctoral Researcher &amp; TA</strong>
+                        <span class="exp-date">2017 – 2023</span>
+                    </div>
+                    <span class="exp-org">Mohammadia School of Engineering (EMI), Rabat</span>
+                    <ul>
+                        <li>Robust control techniques for quadrotor UAV stabilization using adaptive sliding mode approaches</li>
+                        <li>Hardware-in-the-loop validation of control algorithms for UAV systems</li>
+                    </ul>
+                </div>
+                <div class="exp">
+                    <div class="exp-head">
+                        <strong>Research Engineer</strong>
+                        <span class="exp-date">2017 – 2021</span>
+                    </div>
+                    <span class="exp-org">CNRST, Rabat</span>
+                    <ul>
+                        <li>Solar vehicle platform · Moroccan Solar Race 2019 podium</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured project -->
+        <div class="card">
+            <h2><i class="fas fa-rocket"></i> Featured Project</h2>
+            <div class="proj-row">
+                <a href="https://www.youtube.com/watch?v=w7BkFQAR0eU" target="_blank" rel="noopener" class="proj-thumb">
+                    <img src="https://img.youtube.com/vi/w7BkFQAR0eU/hqdefault.jpg" alt="Demo">
+                    <div class="proj-play"><i class="fas fa-play"></i></div>
+                </a>
+                <div class="proj-info">
+                    <span class="proj-badge">HOME4.0</span>
+                    <strong>BCI-Controlled Humanoid Robot</strong>
+                    <p>Real-time brain–computer interface system enabling motor-imagery-driven control of the Alter-Ego humanoid for autonomous manipulation tasks.</p>
+                    <div class="chips sm">
+                        <span>BCI</span><span>EEG</span><span>ROS 2</span><span>MoveIt</span><span>Gazebo</span><span>Shared Autonomy</span><span>Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Selected Publications -->
+        <div class="card">
+            <h2><i class="fas fa-scroll"></i> Selected Publications
+                <a href="publications.html" class="see-all">View all →</a>
+            </h2>
+            <table class="pub-table">
+                <tr class="pub-hl"><td class="pub-y">2025</td><td>Framework for the BCI-Motor Imagery Based Control of Humanoid Robot <span class="pub-v">IEEE RTSI</span></td><td class="pub-c"><span class="badge-new">New</span></td></tr>
+                <tr><td class="pub-y">2025</td><td>Adaptive Nonsingular Fast Terminal SMC Based Finite-Time Disturbance Observer — Quadrotor <span class="pub-v">J. Syst. Control Eng.</span></td><td class="pub-c">6</td></tr>
+                <tr class="pub-hl"><td class="pub-y">2022</td><td>CNN-LSTM: Efficient Hybrid DL Architecture for Short-Term PV Power Prediction <span class="pub-v">Elec. Power Syst. Res.</span></td><td class="pub-c">328</td></tr>
+                <tr class="pub-hl"><td class="pub-y">2021</td><td>Short-Term PV Forecasts Based on Hybrid CNN-LSTM, ConvLSTM Models <span class="pub-v">Renewable Energy</span></td><td class="pub-c">232</td></tr>
+                <tr><td class="pub-y">2020</td><td>Binary Diagnosis of Hall Effect Sensors in BLDC Motor Drives <span class="pub-v">IEEE Trans. Power Elec.</span></td><td class="pub-c">53</td></tr>
+                <tr><td class="pub-y">2018</td><td>Modeling &amp; Robust Integral SMC for a Quadrotor UAV <span class="pub-v">IRSEC 2018</span></td><td class="pub-c">32</td></tr>
+            </table>
+        </div>
+
+        <!-- Contact strip -->
+        <div class="card contact-strip">
+            <span><i class="fas fa-envelope"></i> yassine.elhoum@unict.it</span>
+            <span><i class="fas fa-phone"></i> +39 344 517 9822</span>
+            <span><i class="fas fa-map-marker-alt"></i> Piazza Università 2, 95124 Catania</span>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
